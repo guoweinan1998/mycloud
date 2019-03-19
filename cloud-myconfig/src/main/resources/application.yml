@@ -1,0 +1,19 @@
+server:
+   port: 9001
+   
+spring:
+   application:
+      name: cloud-config
+   cloud:
+      config:
+         server:
+            git:
+               uri: https://github.com/guoweinan1998/mycloud-config.git
+                         # 配置仓库路径，这里是文件夹搜索路径
+               #searchPaths: mySpringCloudConfig
+                # git仓库的用户名和密码，如果是public仓库，可以不写
+               username: guoweinan1998
+               password: guo19980424
+                # 指定分支，不指定默认是master
+               default-label: master
+ 

@@ -1,8 +1,0 @@
-spring:
-   cloud:
-      config:
-         name: cloud-feign-client #git上对应的application.yml名字
-         profile: dev
-         label: master 
-         uri: http://localhost:9001
-         

@@ -1,0 +1,8 @@
+spring:
+   cloud:
+      config:
+         name: cloud-hystrix-dashboard  #git上对应的application.yml名字
+         profile: dev
+         label: master 
+         uri: http://localhost:3344/
+         

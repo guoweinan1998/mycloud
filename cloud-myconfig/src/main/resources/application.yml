@@ -1,5 +1,5 @@
 server:
-   port: 9001
+   port: 3355
    
 spring:
    application:
@@ -15,5 +15,10 @@ spring:
                username: guoweinan1998
                password: guo19980424
                 # 指定分支，不指定默认是master
-               default-label: master
- 
+               #default-label: master
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9101/eureka/
